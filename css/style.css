@@ -103,20 +103,14 @@ nav a:hover {
 
 /*Bloc recherche*/
 
-.recherche {
-    height: auto;
-    max-width: max-content;
-}
-
 .bloc-recherche {
     display: flex;
     flex-direction: row;
-    width: 100%;
     height: 49px;
     margin-top: 35px;
 }
 
-.recherhe h1 {
+.recherche h1 {
     font-size: 22px;
 }
 
@@ -143,8 +137,8 @@ form {
     border: #F2F2F2 solid 1px;
     outline: none;
     font-size: 1em;
-    box-sizing: border-box;
     padding-left: 15px;
+    width: 100%;
 }
 
 ::placeholder {
@@ -235,7 +229,7 @@ form {
     align-items:center;
     justify-content:center;
     border-radius: 100%;
-
+    
 }
 
 
@@ -436,7 +430,7 @@ li {
         align-items: flex-start;
         gap: 0;
         height: auto;
-        }
+    }
 
     .hebergements-and-populaires {
         flex-direction: column;
@@ -504,10 +498,11 @@ li {
         min-width: 50%;
         display: flex;
         justify-content: center;
-        border-bottom: 2px solid transparent;
+        border-bottom: 2px solid #F2F2F2;
         align-items: flex-start;
 
     }
+
     nav a:hover {
         border-bottom: 2px solid #0065FC;
         border-top: 2px solid transparent;
@@ -516,7 +511,12 @@ li {
 
     .recherche, .filtres{
     padding: 0 20px;
-}
+    }
+
+    .bloc-recherche {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+    }
 
     .bloc-recherche .bouton-desktop {
         display: none;
@@ -538,12 +538,9 @@ li {
     .recherche input {
         border: #F2F2F2 solid 1px;
         border-right: none;
-        outline: none;
         font-size: 1em;
         width: 100%;
-        white-space: nowrap;
     }
-
    
     .bloc-filtres {
         display: flex;
@@ -582,8 +579,6 @@ li {
         margin-top: 0;
         box-sizing: border-box;
     }
-
-
 
     .populaires {
         width: 100%;
